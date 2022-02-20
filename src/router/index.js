@@ -1,14 +1,45 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import long from '../views/long'
+import moned from '../views/moned'
+import mas from '../views/mas'
+import tiemp from '../views/tiemp'
+import almacen from '../views/almacen'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/longitud',
+    name: 'longitud',
+    component: long
+  },
+  {
+    path: '/convertMoneda',
+    name: 'convertMoneda',
+    component: moned
+
+  },
+  {
+    path: '/masa',
+    name: 'masa',
+    component: mas
+  },
+  {
+    path: '/tiempo',
+    name: 'tiempo',
+    component: tiemp
+  },
+  {
+    path: '/almacenamiento',
+    name: 'almacenamiento',
+    component: almacen
   },
   {
     path: '/about',
